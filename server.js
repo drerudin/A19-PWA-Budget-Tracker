@@ -5,7 +5,7 @@ const compression = require("compression");
 const apiRoutes = require("./routes/api.js");
 
 const PORT = process.env.PORT || 3001;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/budget";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/budget";
 
 const app = express();
 

@@ -3,12 +3,20 @@ const CACHE_NAME = "static-cache-v2";
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
-    "/index.js",
-    "/db.js",
-    "/styles.css",
-    "/icons/icon-192x192.png",
-    "/icons/icon-512x512.png",
-    "/manifest.webmanifest"
+    "./js/index.js",
+    "./js/idb.js",
+    "./css/styles.css",
+    "./icons/icon-72-72.png",
+    "./icons/icon-96-96.png",
+    "./icons/icon-128-128.png",
+    "./icons/icon-144-144.png",
+    "./icons/icon-152-152.png",
+    "./icons/icon-192-192.png",
+    "./icons/icon-384-384.png",
+    "./icons/icon-512-512.png",
+    "./manifest.webmanifest",
+    "./service-worker.js",
+    "./manifest.json"
 ];
 
 // install
@@ -81,4 +89,3 @@ self.addEventListener("fetch", function (evt) {
         })
     );
 }   );
-
